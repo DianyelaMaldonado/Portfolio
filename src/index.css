@@ -1,0 +1,56 @@
+.mouse-follower {
+  display: block;
+  width: 5rem;
+  height: 5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: var(--color-red);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.mouse-follower {
+  position: absolute;
+  pointer-events: none; 
+  z-index: -1;
+  transition: transform 0.2s ease-out;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+@keyframes bounce {
+  20%,
+  40%,
+  50%,
+  70%,
+  100%,
+  to {
+      transform: scale(1, 1);
+  }
+  40% {
+      transform: scale(1.75, 0.65);
+  }
+  45% {
+      transform: scale(1.75, 0.65);
+  }
+  70% {
+      transform: scale(1.25, 0.75);
+  }
+  90% {
+      transform: scale(1.15, 0.85);
+  }
+}

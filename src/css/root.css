@@ -1,0 +1,28 @@
+:root {
+  --color-white: #FFFFFF;
+--color-black: #1D1D1D;    
+--color-green: #3E6B48; 
+--color-light-pink: #DA918A;
+--color-red: #DE2708;
+--color-red-secondary: #EC7352;
+--color-light-red: #F29F7A;
+--color-lighter-red: #F9CCA2;
+--color-sand: #F7E6A6;
+--shadow-smooth:  0 0 5px 2px rgba(38,41,61,.2);
+--font-san-serif:  'Public Sans', sans-serif;
+--font-cursive: 'La Belle Aurore', cursive;
+--font-cursive-decorator: 'Tilt Warp', cursive;
+--font-quote: 'Fjalla One', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-san-serif);
+  color: var(--color-white);
+  background-color: var(--color-red);
+}
