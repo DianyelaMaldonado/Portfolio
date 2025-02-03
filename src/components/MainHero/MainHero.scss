@@ -1,0 +1,26 @@
+
+.main-hero section .container .loaders-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .loader-text h1 span:hover,
+  .loader-text h1 span:focus-visible,
+  .is-Architects-daughter-container p span:hover,
+  .is-Architects-daughter-container p span:focus-visible {
+    animation-name: bounce;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    color: var(--color-sand);
+  }
+}
+.is-Architects-daughter-line {
+  @media screen and (min-width: 1024px) {
+    svg {
+      width: 100%;
+    }
+  }
+}

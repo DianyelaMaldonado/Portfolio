@@ -1,0 +1,38 @@
+.is-white {
+    color: var(--color-white);
+}
+
+.is-dark {
+    color: var(--color-dark);
+}
+
+.is-upper {
+    text-transform: uppercase;
+}
+
+.is-bolder {
+    font-weight: bold;
+}
+
+.ball {
+    display: none;
+    @media screen and (min-width: $desktop-BP){
+        display: block;
+        width: 7rem;
+        height: 7rem;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: var(--color-red);
+        border-radius: 50%;
+        pointer-events: none;
+        z-index: 0;
+    }
+}
+
+a, button {
+    &:focus-visible {
+        outline-color: var(--color-red);
+        padding: 0.5rem;
+    }
+}

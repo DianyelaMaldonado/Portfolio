@@ -1,5 +1,5 @@
 :root {
-  --color-white: #FFFFFF;
+--color-white: #FFFFFF;
 --color-black: #1D1D1D;    
 --color-green: #3E6B48; 
 --color-light-pink: #DA918A;
@@ -13,16 +13,4 @@
 --font-cursive: 'La Belle Aurore', cursive;
 --font-cursive-decorator: 'Tilt Warp', cursive;
 --font-quote: 'Fjalla One', sans-serif;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: var(--font-san-serif);
-  color: var(--color-white);
-  background-color: var(--color-red);
 }
