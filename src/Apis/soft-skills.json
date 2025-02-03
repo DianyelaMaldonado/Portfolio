@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Organized",
+    "description": "I believe that in order to achieve good objectives, you have to plan the steps well to reach a set goal.",
+    "image": "/images/calendar-min.gif"
+  },
+  {
+    "name": "Autodidact",
+    "description": "I like to be learning on my own, it is never enough to stop acquiring new knowledge",
+    "image": "/images/books-min.gif"
+  },
+  {
+    "name": "Team Player",
+    "description": " I think it's good to have a good relationship with the team you work with and above all share knowledge to grow together",
+    "image": "/images/t-shirt-min.gif"
+  },
+  {
+    "name": "Responsible",
+    "description": "I always try to do the best possible job to deliver the requirements on time, estimating logical delivery dates, thus going hand in hand with good planning.",
+    "image": "/images/busy-3-min.gif"
+  },
+  {
+    "name": "Remote Work",
+    "description": "I feel that remote work is not an impediment to doing a good job, on the contrary, I feel even more responsibility to work from home and in this way I am usually very dedicated to work.",
+    "image": "/images/remote-work-min.gif"
+  },
+  {
+    "name": "Critical thinking",
+    "description": "I enjoy the brainstorming that usually arises from a technical conversation, I like to listen and give my opinion to reach the best possible resolution depending on the technical issue being discussed.",
+    "image": "/images/optimism-min.gif"
+  },
+  {
+    "name": "Optimism",
+    "description": "I always see things in a positive way trying to find a good side to it.",
+    "image": "/images/optimism-min.gif"
+  },
+  {
+    "name": "Empathy",
+    "description": "I empathize a lot with the team members, their human side is very important from my point of view.",
+    "image": "/images/empathy-min.gif"
+  },
+  {
+    "name": "Resilience",
+    "description": "I adapt to unexpected situations",
+    "image": "/images/resilience-min.gif"
+  }
+]
