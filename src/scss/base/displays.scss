@@ -1,0 +1,54 @@
+.hide-on-small-only {
+	display: none;
+	@media(min-width: $tablet-BP) {
+		display: block;
+	}
+}
+
+.hide-on-med-and-down {
+	display: none;
+	@media(min-width: $desktop-BP) {
+		display: block;
+	}
+}
+.hide-on-large-and-down {
+	display: none;
+	@media(min-width: $desktop-big-BP) {
+		display: block;
+	}
+}
+.hide-on-large-and-up {
+	display: block;
+	@media(min-width: $desktop-BP) {
+		display: none !important;
+	}
+}
+.hide-on-xlarge-and-up {
+	display: block;
+	@media(min-width: $desktop-big-BP) {
+		display: none !important;
+	}
+}
+.hide-on-med-and-up {
+	display: block;
+	@media(min-width: $tablet-BP) {
+		display: none !important;
+	}
+}
+.hide-on-extra-big-and-up {
+	display: block;
+	@media(min-width: $desktop-extra-big-BP) {
+		display: none !important;
+	}
+}
+.hide-on-big-and-up {
+	display: block;
+	@media(min-width: $desktop-big-BP) {
+		display: none !important;
+	}
+}
+
+.notransition {
+	opacity: 1 !important;
+	transition: none !important;
+}

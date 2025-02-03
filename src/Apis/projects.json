@@ -1,0 +1,110 @@
+[
+  {
+    "name": "New Hope Housing",
+    "image": "/images/new-hope-housing-project.webp",
+    "url": "https://newhopehousing.com/",
+    "startDate": "2023",
+    "endDate": "2023",
+    "technologies": [
+      "Frontend development",
+      "Craft CMS Integration",
+      "Gsap Animations"
+    ]
+  },
+  {
+    "name": "Lexington Market",
+    "image": "/images/lexington-market-project.webp",
+    "url": "https://lexingtonmarket.com/",
+    "startDate": "2022",
+    "endDate": "2022",
+    "technologies": [
+      "Frontend development",
+      "Craft CMS Integration",
+      "Gsap Animations"
+    ]
+  },
+  {
+    "name": "Cloud Cover",
+    "image": "/images/cloud-cover-project.webp",
+    "url": "",
+    "startDate": "2022",
+    "endDate": "2022",
+    "technologies": [
+      "Frontend development",
+      "Craft CMS Integration",
+      "Gsap Animations"
+    ]
+  },
+  {
+    "name": "Bardasz",
+    "image": "/images/bardasz-project.webp",
+    "url": "https://bardasz.com/",
+    "startDate": "2022",
+    "endDate": "2022",
+    "technologies": [
+      "Frontend development",
+      "Craft CMS Integration",
+      "Gsap Animations"
+    ]
+  },
+  {
+    "name": "Pure Gold",
+    "image": "/images/pure-gold-project.webp",
+    "url": "https://puregoldqdoba.com/",
+    "startDate": "2022",
+    "endDate": "2022",
+    "technologies": [
+      "Frontend development",
+      "Craft CMS Integration",
+      "Gsap Animations"
+    ]
+  },
+  {
+    "name": "Norton Creative",
+    "image": "/images/norton-creative-project.webp",
+    "url": "https://norton-creative.com/",
+    "startDate": "2021",
+    "endDate": "2021",
+    "technologies": [
+      "Frontend development",
+      "Craft CMS Integration",
+      "Gsap Animations"
+    ]
+  },
+  {
+    "name": "Ale Guzman Fitness",
+    "image": "/images/ale-guzman-fitness-project.webp",
+    "url": "/assets/images/ale-guzman-fitness-project.png",
+    "startDate": "2021",
+    "endDate": "2021",
+    "technologies": [
+      "Frontend development",
+      "Craft CMS Integration",
+      "Gsap Animations"
+    ]
+  },
+  {
+    "name": "Westborn Market",
+    "image": "/images/westborn-market-project.webp",
+    "url": "https://westbornmarket.com/",
+    "startDate": "2021",
+    "endDate": "2021",
+    "technologies": [
+      "Frontend development",
+      "Craft CMS Integration",
+      "Gsap Animations"
+    ]
+  },
+  {
+    "name": "Ethos Consulting",
+    "image": "/images/ethos-project.webp",
+    "url": "https://ethospractice.com/",
+    "startDate": "2021",
+    "endDate": "2021",
+    "technologies": [
+      "Frontend development",
+      "Craft CMS Integration",
+      "Gsap Animations"
+    ]
+  }
+]

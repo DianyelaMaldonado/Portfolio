@@ -1,0 +1,42 @@
+/*-----------------------------------*\
+    MEDIA QUERYS
+\*-----------------------------------*/
+
+$mobile-small-BP: 360px;
+$mobile-inter-BP: 500px;
+$mobile-BP: 640px;
+$mobile-big-BP: 767px;
+$tablet-BP: 768px;
+$desktop-BP: 1024px;
+$below-desktop-big-BP: 1279px;
+$desktop-big-BP: 1280px;
+$desktop-extra-big-BP: 1366px;
+$desktop-max-big-BP: 1600px;
+
+/*-----------------------------------*\
+    Mains
+\*-----------------------------------*/
+
+@import './root';
+@import './variables';
+
+/*-----------------------------------*\
+    HELPERS
+\*-----------------------------------*/
+
+@import
+'./helpers/mixins',
+'./helpers/aditional-classes',
+'./helpers/btns-and-hovers.scss',
+'./helpers/animations';
+
+/*-----------------------------------*\
+    BASE
+\*-----------------------------------*/
+
+@import
+'./base/typography',
+'./base/normalize',
+'./base/containers',
+'./base/displays',
+'./base/containers';
