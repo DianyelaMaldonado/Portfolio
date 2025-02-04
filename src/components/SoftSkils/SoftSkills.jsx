@@ -9,7 +9,7 @@ import softSkillsData from "../../Apis/soft-skills.json";
 export const SoftSkills = () => {
   return (
     <>
-      <section className='soft-skills overflow-hidden'>
+      <section className='soft-skills overflow-hidden pb-5'>
         <div>
           <Row xs={1} md={2} lg={3} className='g-4'>
             {softSkillsData.map((softSkill, index) => (
