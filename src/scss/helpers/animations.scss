@@ -1,4 +1,5 @@
 @keyframes bounce {
+
     20%,
     40%,
     50%,
@@ -7,16 +8,30 @@
     to {
         transform: scale(1, 1);
     }
+
     40% {
         transform: scale(1.75, 0.65);
     }
+
     45% {
         transform: scale(1.75, 0.65);
     }
+
     70% {
         transform: scale(1.25, 0.75);
     }
+
     90% {
         transform: scale(1.15, 0.85);
+    }
+}
+
+@keyframes anim-jelly {
+    0% {
+        transform: matrix3d(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    }
+
+    100% {
+        transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
     }
 }

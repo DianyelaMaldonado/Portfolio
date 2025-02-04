@@ -1,83 +1,29 @@
 /*-----------------------------------*\
 	TYPOGRAPHY
 \*-----------------------------------*/
-@mixin fontsize($fsm, $fst, $fsd){
+@mixin fontsize($fsm, $fst, $fsd) {
     font-size: $fsm;
-    @media screen and (min-width: $tablet-BP){
-        font-size: $fst; 
+
+    @media screen and (min-width: $tablet-BP) {
+        font-size: $fst;
     }
-    @media screen and (min-width: $desktop-BP){
-        font-size: $fsd; 
+
+    @media screen and (min-width: $desktop-BP) {
+        font-size: $fsd;
     }
 }
 
 /*-----------------------------------*\
 	LINE HEIGHT
 \*-----------------------------------*/
-@mixin lineheight($lhm, $lht, $lhd){
+@mixin lineheight($lhm, $lht, $lhd) {
     line-height: $lhm;
-    @media screen and (min-width: $tablet-BP){
-        line-height: $lht; 
-    }
-    @media screen and (min-width: $desktop-BP){
-        line-height: $lhd; 
-    }
-}
 
-/*-----------------------------------*\
-    CONTACT ANIMATIONS MIXINS
-\*-----------------------------------*/
-
-@mixin animate() {
-    transition: all .35s;
-    transition-timing-function: cubic-bezier(0.310,-0.105,0.430, 1.590);
-}
-
-@mixin active-cta() {
-    &:before {
-        top: -10%;
-        left: -10%;
+    @media screen and (min-width: $tablet-BP) {
+        line-height: $lht;
     }
 
-    span {
-        width: 6rem;
-        height: 6rem;
-        &.linkedin-icon {
-            background: url(/assets/icons/linkedin-icon-bg-white.png) no-repeat center center;
-            background-size: 6rem;
-        }
-        &.email-icon {
-            background: url(/assets/icons/gmail-icon-bg-red.png) no-repeat center center;
-            background-size: 6rem;
-        }
-        &.github-icon {
-            background: url(/assets/icons/github-icon-bg-white.png) no-repeat center center;
-            background-size: 6rem;
-        }
-    }
-}
-
-@mixin inactive-cta() {
-    &:before {
-        top: 90%;
-        left: -110%;
-    }
-
-    span {
-        transform: scale(0.8);
-    }
-
-    $sites: (
-        linkedin:#0966C2,
-        email: #d48376,
-        github: #000000,
-    );
-
-    @each $site, $color in $sites {
-        &.cta-#{$site}-link {
-            &::before {
-                background-color: $color;
-            }
-        }
+    @media screen and (min-width: $desktop-BP) {
+        line-height: $lhd;
     }
 }

@@ -1,0 +1,143 @@
+.menuHolder {
+  z-index: 9999999999;
+  position: fixed;
+  top: 38px;
+  right: 39px;
+}
+
+.c-hamburger {
+  z-index: 10000;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 41px;
+  height: 43px;
+  font-size: 0;
+  text-indent: -12px;
+  appearance: none;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.c-hamburger:focus {
+  outline: none;
+}
+
+.c-hamburger span {
+  display: block;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: var(--color-red);
+  border-radius: 10px;
+}
+
+.c-hamburger span::before,
+.c-hamburger span::after {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  border-radius: 10px;
+  background-color: var(--color-red);
+  content: "";
+}
+
+.c-hamburger span::before {
+  top: -14px;
+}
+
+.c-hamburger span::after {
+  bottom: -14px;
+}
+
+.c-hamburger--htx {
+  background-color: transparent;
+}
+
+.c-hamburger--htx span {
+  transition: background 0s 0.3s;
+}
+
+.c-hamburger--htx span::before,
+.c-hamburger--htx span::after {
+  transition-duration: 0.3s;
+  transition-delay: 0.3s, 0s;
+}
+
+.c-hamburger--htx.is-active span {
+  background: none;
+
+  &:nth-child(1) {
+    border: transparent !important;
+  }
+}
+
+.c-hamburger--htx.is-active span::before {
+  top: 0;
+  transform: rotate(45deg);
+  background-color: var(--color-sand);
+}
+
+.c-hamburger--htx.is-active span::after {
+  bottom: 0;
+  transform: rotate(-45deg);
+  background-color: var(--color-sand);
+}
+
+.menu-wrap {
+  position: fixed;
+  z-index: 10000;
+  background-color: var(--color-red);
+  transition: width 0.3s, height 0.3s;
+  width: 0;
+  height: 0;
+  top: 0;
+  right: 0;
+  transform-origin: 100% 0%;
+  border-bottom-left-radius: 500px;
+}
+
+.menu {
+  height: 100%;
+  opacity: 0;
+  font-size: 0.65em;
+  color: black;
+  text-align: center;
+  transition: opacity 0.3s 0.3s;
+}
+
+.menu-wrap.show-menu {
+  width: 500px;
+  height: 500px;
+  border-bottom-left-radius: 500px;
+  animation: anim-jelly 0.8s linear forwards;
+}
+
+.menu-wrap.show-menu .menu {
+  opacity: 1;
+}
+
+.link-list {
+  font-size: 35px;
+  line-height: 50px;
+  color: white;
+  letter-spacing: 1px;
+  padding-top: 100px;
+  padding-left: 20%;
+}
+
+.link-list li {
+  list-style: none;
+}
+
+.link-list a {
+  color: var(--color-sand);
+  text-decoration: none;
+}

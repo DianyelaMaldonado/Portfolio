@@ -7,16 +7,27 @@ import { Link } from "react-router-dom";
 export const Footer = () => {
   return (
     <>
-      <section className='footer overflow-hidden'>
+      <section className='footer overflow-hidden' id='contact'>
         <div>
           <div className='row align-items-center contact-wrapper'>
-            <div className='col-12 contact-information mb-4'>
-              <div className='contact-information-title'>
+            <div
+              className='col-12 contact-information mb-4'
+              data-parallax-stagged-content
+              data-parallax-stagged-content-duration='0.90'
+              data-parallax-animated-scroll-start='10%'
+            >
+              <div
+                className='contact-information-title'
+                data-parallax-stagged-content-item
+              >
                 <h3 className='text-center m-auto'>
                   Let's Make Awesome Code Together!
                 </h3>
               </div>
-              <div className='contact-information-cta d-flex align-items-center justify-content-center mt-5 mb-5'>
+              <div
+                className='contact-information-cta d-flex align-items-center justify-content-center mt-5 mb-5'
+                data-parallax-stagged-content-item
+              >
                 <div className='cta-linkedin'>
                   <Link
                     to='https://www.linkedin.com/in/dianyela-maldonado/'
