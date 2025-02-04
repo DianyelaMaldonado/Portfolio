@@ -174,49 +174,52 @@ export const MainHero = () => {
     <>
       <div className='main-hero'>
         <section className='overflow-hidden'>
-          <p className='is-cursive-code text-start'>&lt;html/&gt;</p>
-          <p className='is-cursive-code text-start ms-5'>&lt;body/&gt;</p>
-          <div className='d-flex justify-content-between'>
-            {/* left content */}
-            <div className='info-left hide-on-large-and-down'>
-              <DChart />
-            </div>
-            {/* Right content */}
-            <div className='info-right loader-logo'>
-              <div
-                ref={mouseFollowerRef}
-                className={`mouse-follower ${
-                  isHoveringWebDeveloper ? "active" : ""
-                }`}
-              ></div>
-              <div
-                className='container d-flex flex-column'
-                style={{ transition: "all 0.3s ease-in-out" }}
-              >
-                <div className='loaders-wrapper d-flex flex-column justify-content-between'>
-                  <div className='loader-text'>
-                    <h1 ref={heroTitleRef} className='text-start mb-5'>
-                      {breakTitleText(usingObjectAssign)}
-                    </h1>
-                  </div>
+          <div>
+            <p className='is-cursive-code text-start pt-5'>&lt;html/&gt;</p>
+            <p className='is-cursive-code text-start ms-5'>&lt;body/&gt;</p>
+            <div className='d-flex justify-content-between align-items-center'>
+              {/* left content */}
+              <div className='info-left hide-on-large-and-down'>
+                <DChart />
+              </div>
+              {/* Right content */}
+              <div className='info-right loader-logo'>
+                <div
+                  ref={mouseFollowerRef}
+                  className={`mouse-follower ${
+                    isHoveringWebDeveloper ? "active" : ""
+                  }`}
+                ></div>
+                <div
+                  className='container d-flex flex-column'
+                  style={{ transition: "all 0.3s ease-in-out" }}
+                >
+                  <div className='loaders-wrapper d-flex flex-column justify-content-between'>
+                    <div className='loader-text'>
+                      <h1 ref={heroTitleRef} className='text-start mb-5'>
+                        {breakTitleText(usingObjectAssign)}
+                      </h1>
+                    </div>
 
-                  <div className='is-Architects-daughter-container mt-5 text-end align-self-start'>
-                    <p
-                      ref={webDeveloperRef}
-                      className='is-bigger-cursive is-Architects-daughter'
-                      onMouseEnter={handleMouseEnter}
-                      onMouseLeave={handleMouseLeave}
-                    >
-                      Web Developer
-                    </p>
-                    <span className='is-Architects-daughter-line'>
-                      <DecoratorLine animatedLineRef={animatedLineRef} />
-                    </span>
+                    <div className='is-Architects-daughter-container mt-5 text-end align-self-start'>
+                      <p
+                        ref={webDeveloperRef}
+                        className='is-bigger-cursive is-Architects-daughter'
+                        onMouseEnter={handleMouseEnter}
+                        onMouseLeave={handleMouseLeave}
+                      >
+                        Web Developer
+                      </p>
+                      <span className='is-Architects-daughter-line'>
+                        <DecoratorLine animatedLineRef={animatedLineRef} />
+                      </span>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+
           <p className='is-cursive-code text-end'>&lt;html/&gt;</p>
         </section>
       </div>

@@ -15,7 +15,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap');
 
 //*font-family: 'Fjalla One', sans-serif;
-
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 
 
@@ -23,8 +22,8 @@ p, a, span, ul li, blockquote {
     margin: 0;
     font-weight: 400;
     font-family: var(--font-san-serif);
-    @include fontsize(2rem, 2rem, 2.2rem);
-    @include lineheight(2.4rem, 2.6rem, 3rem);
+    @include fontsize(1.4rem, 1.5rem, 1.5rem);
+    @include lineheight(2rem, 2rem, 2rem);
 
     &.nav-items {
         @include fontsize(1.8rem, 1.8rem, 2.2rem);

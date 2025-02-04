@@ -1,10 +1,24 @@
 
-.main-hero section .container .loaders-wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
+.main-hero {
+section {
+  @media screen and (min-width: 1024px) {
+  height: 100vh;
+  }
+  & > div > div {
+    height: 60vh;
+  }
+
+  .container {
+    .loaders-wrapper {
+      section  {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+  }
+} 
+
 
 @media screen and (min-width: 1024px) {
   .loader-text h1 span:hover,
@@ -23,4 +37,6 @@
       width: 100%;
     }
   }
+}
+}
 }
