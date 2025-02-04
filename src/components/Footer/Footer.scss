@@ -76,7 +76,7 @@ $transition-timing: cubic-bezier(0.31, -0.105, 0.43, 1.59);
   }
 
   span.linkedin-icon {
-    background: url(public/icons/linkedin-icon-bg-blue.png) no-repeat center center;
+    background: url(/icons/linkedin-icon-bg-blue.png) no-repeat center center;
     background-size: 4rem;
 
     @media (max-width: 667px) {
@@ -91,7 +91,7 @@ $transition-timing: cubic-bezier(0.31, -0.105, 0.43, 1.59);
   }
 
   span.email-icon {
-    background: url(public/icons/gmail-icon-bg-red.png) no-repeat center center;
+    background: url(/icons/gmail-icon-bg-red.png) no-repeat center center;
     background-size: 5rem;
     color: var(--color-red);
 
@@ -107,7 +107,7 @@ $transition-timing: cubic-bezier(0.31, -0.105, 0.43, 1.59);
   }
 
   span.github-icon {
-    background: url(public/icons/github-icon-bg-dark.png) no-repeat center center;
+    background: url(/icons/github-icon-bg-dark.png) no-repeat center center;
     background-size: 5rem;
 
     @media (max-width: 667px) {

@@ -1,7 +1,7 @@
 [
   {
     "name": "Little Woodrows",
-    "image": "/images/littlewoodrows-project.webp",
+    "image": "images/littlewoodrows-project.webp",
     "url": "https://dev-littlewoodrows.heyblackmagic.com/",
     "startDate": "Nov 2024",
     "endDate": "Work In Progress",
@@ -14,7 +14,7 @@
   },
   {
     "name": "Gateway",
-    "image": "/images/gateway-project.webp",
+    "image": "images/gateway-project.webp",
     "url": "https://gatewaymaryland.org/",
     "startDate": "Sep 2023",
     "endDate": "Jan 2024",
@@ -27,7 +27,7 @@
   },
   {
     "name": "Eshelman Innovation",
-    "image": "/images/eshelman-project.webp",
+    "image": "images/eshelman-project.webp",
     "url": "https://eshelmaninnovation.org/",
     "startDate": "May 2023",
     "endDate": "Aug 2023",
@@ -40,7 +40,7 @@
   },
   {
     "name": "Mambo",
-    "image": "/images/mambo-project.webp",
+    "image": "images/mambo-project.webp",
     "url": "https://mamboseafood.com/",
     "startDate": "May 2023",
     "endDate": "Aug 2023",
@@ -53,7 +53,7 @@
   },
   {
     "name": "New Hope Housing",
-    "image": "/images/new-hope-housing-project.webp",
+    "image": "images/new-hope-housing-project.webp",
     "url": "https://newhopehousing.com/",
     "startDate": "Feb 2023",
     "endDate": "July 2023",
@@ -66,7 +66,7 @@
   },
   {
     "name": "Lexington Market",
-    "image": "/images/lexington-market-project.webp",
+    "image": "images/lexington-market-project.webp",
     "url": "https://lexingtonmarket.com/",
     "startDate": "Dec 2021",
     "endDate": "Oct 2022",
@@ -79,7 +79,7 @@
   },
   {
     "name": "Cloud Cover",
-    "image": "/images/cloud-cover-project.webp",
+    "image": "images/cloud-cover-project.webp",
     "url": "https://cloudcovercannabis.com/",
     "startDate": "Jan 2022",
     "endDate": "March 2022",
@@ -92,7 +92,7 @@
   },
   {
     "name": "Bardasz",
-    "image": "/images/bardasz-project.webp",
+    "image": "images/bardasz-project.webp",
     "url": "https://bardasz.com/",
     "startDate": "Oct 2021",
     "endDate": "Feb 2022",
@@ -105,7 +105,7 @@
   },
   {
     "name": "Pure Gold",
-    "image": "/images/pure-gold-project.webp",
+    "image": "images/pure-gold-project.webp",
     "url": "https://puregoldqdoba.com/",
     "startDate": "May 2022",
     "endDate": "June 2022",
@@ -118,7 +118,7 @@
   },
   {
     "name": "Norton Creative",
-    "image": "/images/norton-creative-project.webp",
+    "image": "images/norton-creative-project.webp",
     "url": "https://norton-creative.com/",
     "startDate": "Aug 2021",
     "endDate": "feb 2022",
@@ -131,7 +131,7 @@
   },
   {
     "name": "Ale Guzman Fitness",
-    "image": "/images/ale-guzman-fitness-project.webp",
+    "image": "images/ale-guzman-fitness-project.webp",
     "url": "",
     "startDate": "Aug 2021",
     "endDate": "May 2022",
@@ -144,7 +144,7 @@
   },
   {
     "name": "Westborn Market",
-    "image": "/images/westborn-market-project.webp",
+    "image": "images/westborn-market-project.webp",
     "url": "https://westbornmarket.com/",
     "startDate": "Dec 2020",
     "endDate": "June 2021",
@@ -157,7 +157,7 @@
   },
   {
     "name": "Ethos Consulting",
-    "image": "/images/ethos-project.webp",
+    "image": "images/ethos-project.webp",
     "url": "https://ethospractice.com/",
     "startDate": "Dec 2020",
     "endDate": "2021",
