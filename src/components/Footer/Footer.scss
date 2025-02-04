@@ -1,0 +1,117 @@
+$transition-duration: 0.35s;
+$transition-timing: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+
+.cta-linkedin-link,
+.cta-email-link,
+.cta-github-link {
+  display: inline-block;
+  background-color: #fff;
+  width: 9rem;
+  height: 9rem;
+  line-height: 9rem;
+  margin: 0 1rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 0 0 10px 2px rgba(38, 41, 61, 0.2);
+  opacity: 0.99;
+  transition: all $transition-duration $transition-timing;
+
+  @media (max-width: 667px) {
+    width: 4rem;
+    height: 4rem;
+    line-height: 4rem;
+  }
+
+  &:before {
+    content: '';
+    width: 120%;
+    height: 120%;
+    position: absolute;
+    transform: rotate(45deg);
+    transition: all $transition-duration $transition-timing;
+    top: 90%;
+    left: -110%;
+
+    @media (max-width: 667px) {
+      width: 20%;
+      height: 20%;
+    }
+  }
+
+  span {
+    display: inline-flex;
+    width: 8rem;
+    height: 9rem;
+    background-size: 8rem;
+    vertical-align: middle;
+    transition: all $transition-duration $transition-timing;
+    transform: scale(0.8);
+
+    @media (max-width: 667px) {
+      width: 4rem;
+      height: 4rem;
+      background-size: 2rem;
+    }
+  }
+
+  &:hover,
+  &:focus-visible {
+    &:before {
+      top: -10%;
+      left: -10%;
+    }
+
+    span {
+      transform: scale(1);
+      color: #fff;
+    }
+  }
+}
+
+.cta-linkedin-link {
+  &:before {
+    background-color: #3B5998;
+  }
+
+  span.linkedin-icon {
+    background: url(public/icons/linkedin-icon-bg-blue.png) no-repeat center center;
+    background-size: 6rem;
+
+    @media (max-width: 667px) {
+      background-size: 2rem;
+    }
+  }
+}
+
+.cta-email-link {
+  &:before {
+    background-color: #DC4A38;
+  }
+
+  span.email-icon {
+    background: url(public/icons/gmail-icon-bg-red.png) no-repeat center center;
+    background-size: 5rem;
+    color: #DC4A38;
+
+    @media (max-width: 667px) {
+      background-size: 2rem;
+    }
+  }
+}
+
+.cta-github-link {
+  &:before {
+    background-color: #333;
+  }
+
+  span.github-icon {
+    background: url(public/icons/github-icon-bg-dark.png) no-repeat center center;
+    background-size: 5rem;
+
+    @media (max-width: 667px) {
+      background-size: 2rem;
+    }
+  }
+}
