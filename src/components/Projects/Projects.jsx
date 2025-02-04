@@ -1,10 +1,41 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "../../scss/main.scss";
 import "./Projects.scss";
 import projects from "../../Apis/projects.json";
 
+gsap.registerPlugin(ScrollTrigger);
+
 export const Projects = () => {
+  useEffect(() => {
+    //Animation to animate bg color
+    const backgrounds = gsap.utils.toArray(".project-item-background");
+
+    backgrounds.forEach((bg) => {
+      const cardProject = bg.closest(".card-project");
+      const fromX = cardProject.classList.contains("reverse")
+        ? "100%"
+        : "-100%";
+
+      gsap.fromTo(
+        bg,
+        { x: fromX },
+        {
+          x: "0%",
+          ease: "power1.out",
+          scrollTrigger: {
+            trigger: cardProject,
+            start: "top 80%",
+            end: "bottom 20%",
+            scrub: true,
+          },
+        }
+      );
+    });
+  }, []);
+
   return (
     <section className='projects overflow-hidden py-5'>
       <div>
