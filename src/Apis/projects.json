@@ -1,10 +1,63 @@
 [
   {
+    "name": "Little Woodrows",
+    "image": "/images/littlewoodrows-project.webp",
+    "url": "https://dev-littlewoodrows.heyblackmagic.com/",
+    "startDate": "Nov 2024",
+    "endDate": "Work In Progress",
+    "realized": "Worked in Progress - Worked in Black magic",
+    "technologies": [
+      "PHP",
+      "WordPress",
+      "Taildwind CSS"
+    ]
+  },
+  {
+    "name": "Gateway",
+    "image": "/images/gateway-project.webp",
+    "url": "https://gatewaymaryland.org/",
+    "startDate": "Sep 2023",
+    "endDate": "Jan 2024",
+    "realized": "Worked in Black magic",
+    "technologies": [
+      "Accessibility AA website",
+      "WordPress",
+      "Taildwind CSS"
+    ]
+  },
+  {
+    "name": "Eshelman Innovation",
+    "image": "/images/eshelman-project.webp",
+    "url": "https://eshelmaninnovation.org/",
+    "startDate": "May 2023",
+    "endDate": "Aug 2023",
+    "realized": "Worked in Black magic",
+    "technologies": [
+      "Accessibility",
+      "Craft CMS Integration",
+      "Gsap Animations"
+    ]
+  },
+  {
+    "name": "Mambo",
+    "image": "/images/mambo-project.webp",
+    "url": "https://mamboseafood.com/",
+    "startDate": "May 2023",
+    "endDate": "Aug 2023",
+    "realized": "Worked in Black magic",
+    "technologies": [
+      "Frontend development",
+      "Craft CMS Integration",
+      "Gsap Animations"
+    ]
+  },
+  {
     "name": "New Hope Housing",
-    "image": "public/images/new-hope-housing-project.webp",
+    "image": "/images/new-hope-housing-project.webp",
     "url": "https://newhopehousing.com/",
-    "startDate": "2023",
-    "endDate": "2023",
+    "startDate": "Feb 2023",
+    "endDate": "July 2023",
+    "realized": "Worked in Black magic",
     "technologies": [
       "Frontend development",
       "Craft CMS Integration",
@@ -15,8 +68,9 @@
     "name": "Lexington Market",
     "image": "/images/lexington-market-project.webp",
     "url": "https://lexingtonmarket.com/",
-    "startDate": "2022",
-    "endDate": "2022",
+    "startDate": "Dec 2021",
+    "endDate": "Oct 2022",
+    "realized": "Worked in Black magic",
     "technologies": [
       "Frontend development",
       "Craft CMS Integration",
@@ -26,9 +80,10 @@
   {
     "name": "Cloud Cover",
     "image": "/images/cloud-cover-project.webp",
-    "url": "",
-    "startDate": "2022",
-    "endDate": "2022",
+    "url": "https://cloudcovercannabis.com/",
+    "startDate": "Jan 2022",
+    "endDate": "March 2022",
+    "realized": "Worked in Black magic",
     "technologies": [
       "Frontend development",
       "Craft CMS Integration",
@@ -39,8 +94,9 @@
     "name": "Bardasz",
     "image": "/images/bardasz-project.webp",
     "url": "https://bardasz.com/",
-    "startDate": "2022",
-    "endDate": "2022",
+    "startDate": "Oct 2021",
+    "endDate": "Feb 2022",
+    "realized": "Worked in Black magic",
     "technologies": [
       "Frontend development",
       "Craft CMS Integration",
@@ -51,8 +107,9 @@
     "name": "Pure Gold",
     "image": "/images/pure-gold-project.webp",
     "url": "https://puregoldqdoba.com/",
-    "startDate": "2022",
-    "endDate": "2022",
+    "startDate": "May 2022",
+    "endDate": "June 2022",
+    "realized": "Worked in Black magic",
     "technologies": [
       "Frontend development",
       "Craft CMS Integration",
@@ -63,8 +120,9 @@
     "name": "Norton Creative",
     "image": "/images/norton-creative-project.webp",
     "url": "https://norton-creative.com/",
-    "startDate": "2021",
-    "endDate": "2021",
+    "startDate": "Aug 2021",
+    "endDate": "feb 2022",
+    "realized": "Worked in Black magic",
     "technologies": [
       "Frontend development",
       "Craft CMS Integration",
@@ -74,9 +132,10 @@
   {
     "name": "Ale Guzman Fitness",
     "image": "/images/ale-guzman-fitness-project.webp",
-    "url": "/assets/images/ale-guzman-fitness-project.png",
-    "startDate": "2021",
-    "endDate": "2021",
+    "url": "",
+    "startDate": "Aug 2021",
+    "endDate": "May 2022",
+    "realized": "Freelance work",
     "technologies": [
       "Frontend development",
       "Craft CMS Integration",
@@ -87,8 +146,9 @@
     "name": "Westborn Market",
     "image": "/images/westborn-market-project.webp",
     "url": "https://westbornmarket.com/",
-    "startDate": "2021",
-    "endDate": "2021",
+    "startDate": "Dec 2020",
+    "endDate": "June 2021",
+    "realized": "Worked in Black magic",
     "technologies": [
       "Frontend development",
       "Craft CMS Integration",
@@ -99,8 +159,9 @@
     "name": "Ethos Consulting",
     "image": "/images/ethos-project.webp",
     "url": "https://ethospractice.com/",
-    "startDate": "2021",
+    "startDate": "Dec 2020",
     "endDate": "2021",
+    "realized": "Worked in Black magic",
     "technologies": [
       "Frontend development",
       "Craft CMS Integration",

@@ -37,7 +37,7 @@ export const Projects = () => {
   }, []);
 
   return (
-    <section className='projects overflow-hidden py-5'>
+    <section className='projects overflow-hidden py-5' id='projects'>
       <div>
         <div className='d-flex container mb-4'>
           <h2 className='me-2 text-danger'>Projects</h2>
@@ -70,30 +70,51 @@ export const Projects = () => {
                   </div>
                 </div>
 
-                <div className='col-md-5 text-center card-size'>
-                  <h3 className='mb-3'>{project.name}</h3>
-                  <ul className='list-unstyled'>
+                <div
+                  className='col-md-5 text-center card-size'
+                  data-parallax-stagged-content
+                  data-parallax-animated-scroll-start='50%'
+                >
+                  <h3 className='mb-3' data-parallax-stagged-content-item>
+                    {project.name}
+                  </h3>
+                  <ul
+                    className='list-unstyled'
+                    data-parallax-stagged-content-item
+                  >
                     {project.technologies.map((technology, idx) => (
                       <li key={idx} className='text-muted'>
                         • {technology}
                       </li>
                     ))}
                   </ul>
-                  <p className='small text-muted'>
+                  <p
+                    className='small text-muted p-0 m-0'
+                    data-parallax-stagged-content-item
+                  >
                     {project.startDate} - {project.endDate}
                   </p>
-                  <Link
-                    to={project.url}
-                    className='project-link'
-                    target='_blank'
-                    rel='noopener noreferrer'
+                  <p
+                    className='small text-muted'
+                    data-parallax-stagged-content-item
                   >
-                    <span>View Project</span>
-                    <svg width='13px' height='10px' viewBox='0 0 13 10'>
-                      <path d='M1,5 L11,5'></path>
-                      <polyline points='8 1 12 5 8 9'></polyline>
-                    </svg>
-                  </Link>
+                    {project.realized}
+                  </p>
+                  {project.url && (
+                    <Link
+                      to={project.url}
+                      className='project-link'
+                      target='_blank'
+                      rel='noopener noreferrer'
+                      data-parallax-stagged-content-item
+                    >
+                      <span>View Project</span>
+                      <svg width='13px' height='10px' viewBox='0 0 13 10'>
+                        <path d='M1,5 L11,5'></path>
+                        <polyline points='8 1 12 5 8 9'></polyline>
+                      </svg>
+                    </Link>
+                  )}
                 </div>
               </div>
             </div>

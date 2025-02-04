@@ -17,6 +17,31 @@ export const MainHero = () => {
     heroTitleAnimation();
     webDeveloperTextAnimation();
     dCharAnimation();
+
+    // Detect the header for the cursor enter
+    // the mouseFollower change the color
+    const header = document.querySelector("header");
+    const mouseFollower = mouseFollowerRef.current;
+    if (header && mouseFollower) {
+      const handleHeaderEnter = () => {
+        // Change the color of the mouse circle to black
+        mouseFollower.style.backgroundColor = "black";
+      };
+
+      const handleHeaderLeave = () => {
+        // Add original Color (Empty)
+        mouseFollower.style.backgroundColor = "";
+      };
+
+      header.addEventListener("mouseenter", handleHeaderEnter);
+      header.addEventListener("mouseleave", handleHeaderLeave);
+
+      // Delete Listeners
+      return () => {
+        header.removeEventListener("mouseenter", handleHeaderEnter);
+        header.removeEventListener("mouseleave", handleHeaderLeave);
+      };
+    }
   }, []);
 
   // Animation stager for each letter in the hero title
@@ -41,7 +66,6 @@ export const MainHero = () => {
   const mouseFollowerAnimation = () => {
     const mouseFollower = mouseFollowerRef.current;
     const webDeveloperElement = webDeveloperRef.current;
-
     if (!mouseFollower || !webDeveloperElement) return;
 
     gsap.set(mouseFollower, { xPercent: -50, yPercent: -50 });
@@ -133,11 +157,6 @@ export const MainHero = () => {
     setIsHoveringWebDeveloper(false);
   };
 
-  // Description
-  const aboutTextPresentation =
-    "HiI'm Dianyela Maldonadobut you can call me Dian :)";
-  const usingObjectAssign = [...aboutTextPresentation];
-
   // Function to line break text for presentation
   // This function breaks the input text into individual spans and adds line breaks at specific positions.
   const breakTitleText = (text) => {
@@ -146,6 +165,7 @@ export const MainHero = () => {
     let counter = 0;
     const isMobile = window.innerWidth <= 765;
 
+    // Define breakpoints for mobile view (accumulated indexes)
     const mobileBreakpoints = [1, 14, 23, 35];
 
     chars.forEach((char, index) => {
@@ -161,10 +181,12 @@ export const MainHero = () => {
       );
 
       if (isMobile) {
+        // Insert line break at mobile breakpoints
         if (mobileBreakpoints.includes(counter) && index !== chars.length - 1) {
           newText.push(<br key={`br-${index}`} />);
         }
       } else {
+        // Desktop logic: insert a comma and line break at counter === 1, and a break at counter === 23
         if (counter === 1 && index !== chars.length - 1) {
           newText.push(<span key={`comma-${index}`}>, </span>);
           newText.push(<br key={`br-${index}`} />);
@@ -179,10 +201,15 @@ export const MainHero = () => {
     return newText;
   };
 
+  // Description
+  const aboutTextPresentation =
+    "HiI'm Dianyela Maldonadobut you can call me Dian :)";
+  const usingObjectAssign = [...aboutTextPresentation];
+
   return (
     <>
       <div className='main-hero'>
-        <section className='overflow-hidden'>
+        <section className='overflow-hidden' id='home'>
           <div>
             <p className='is-cursive-code text-start pt-5'>&lt;html/&gt;</p>
             <p className='is-cursive-code text-start ms-5'>&lt;body/&gt;</p>
@@ -191,7 +218,7 @@ export const MainHero = () => {
               <div className='info-left hide-on-large-and-down'>
                 <DChart />
               </div>
-              {/* Right content */}
+              {/* right content */}
               <div className='info-right loader-logo'>
                 <div
                   ref={mouseFollowerRef}
@@ -209,7 +236,6 @@ export const MainHero = () => {
                         {breakTitleText(usingObjectAssign)}
                       </h1>
                     </div>
-
                     <div className='is-Architects-daughter-container mt-5 text-end align-self-start'>
                       <p
                         ref={webDeveloperRef}
@@ -228,7 +254,6 @@ export const MainHero = () => {
               </div>
             </div>
           </div>
-
           <p className='is-cursive-code text-end'>&lt;html/&gt;</p>
         </section>
       </div>

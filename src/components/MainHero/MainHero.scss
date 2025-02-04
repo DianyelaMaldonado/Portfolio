@@ -4,7 +4,6 @@
   padding-left: 2rem;
   padding-right: 2rem;
 
-
   section {
     @media screen and (min-width: 1024px) {
       height: 100vh;
@@ -12,6 +11,12 @@
 
     &>div>div {
       height: 60vh;
+    }
+
+    .info-left {
+      @media screen and (min-width: 1024px) {
+        margin-right: 6rem;
+      }
     }
 
     .container {
@@ -48,9 +53,7 @@
           }
         }
       }
-
     }
-
 
     @media screen and (min-width: 1024px) {
 
