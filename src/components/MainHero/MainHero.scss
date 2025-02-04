@@ -1,42 +1,76 @@
-
 .main-hero {
-section {
-  @media screen and (min-width: 1024px) {
-  height: 100vh;
-  }
-  & > div > div {
-    height: 60vh;
-  }
+  max-width: 1380px;
+  margin: 0 auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
 
-  .container {
-    .loaders-wrapper {
-      section  {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+
+  section {
+    @media screen and (min-width: 1024px) {
+      height: 100vh;
+    }
+
+    &>div>div {
+      height: 60vh;
+    }
+
+    .container {
+      width: 100vw;
+
+      .no-maxwidth {
+        max-width: none !important;
+      }
+
+      .loaders-wrapper {
+        section {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+        }
+      }
+
+      .loader-text {
+        h1 {
+          font-size: 4rem;
+          line-height: 1.2;
+          margin-bottom: 2rem;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .loader-text {
+          h1 {
+            font-size: 2.5rem;
+            line-height: 1.1;
+            word-wrap: break-word;
+            padding: 0 1rem;
+          }
+        }
+      }
+
+    }
+
+
+    @media screen and (min-width: 1024px) {
+
+      .loader-text h1 span:hover,
+      .loader-text h1 span:focus-visible,
+      .is-Architects-daughter-container p span:hover,
+      .is-Architects-daughter-container p span:focus-visible {
+        animation-name: bounce;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        color: var(--color-sand);
+      }
+    }
+
+    .is-Architects-daughter-line {
+      @media screen and (min-width: 1024px) {
+        svg {
+          width: 100%;
+        }
+      }
     }
   }
-} 
-
-
-@media screen and (min-width: 1024px) {
-  .loader-text h1 span:hover,
-  .loader-text h1 span:focus-visible,
-  .is-Architects-daughter-container p span:hover,
-  .is-Architects-daughter-container p span:focus-visible {
-    animation-name: bounce;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    color: var(--color-sand);
-  }
-}
-.is-Architects-daughter-line {
-  @media screen and (min-width: 1024px) {
-    svg {
-      width: 100%;
-    }
-  }
-}
-}
 }

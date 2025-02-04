@@ -1,7 +1,7 @@
 [
   {
     "name": "New Hope Housing",
-    "image": "/images/new-hope-housing-project.webp",
+    "image": "public/images/new-hope-housing-project.webp",
     "url": "https://newhopehousing.com/",
     "startDate": "2023",
     "endDate": "2023",

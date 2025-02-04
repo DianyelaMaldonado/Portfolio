@@ -1,0 +1,86 @@
+.projects {
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+  padding-left: 0;
+
+  .cards-project {
+    display: block;
+
+    .card-project {
+      margin-bottom: 6rem;
+
+      @media (min-width: 300px) and (max-width: 1300px) {
+        margin-bottom: 2rem;
+
+        .row {
+          flex-direction: column !important;
+        }
+
+        .col-md-7,
+        .col-md-5 {
+          max-width: 100%;
+          flex: 0 0 100%;
+        }
+      }
+
+      .card-size {
+        padding: 12rem;
+
+        @media (min-width: 300px) and (max-width: 1300px) {
+          padding: 2rem;
+        }
+      }
+
+      .project-image-container {
+        width: 100%;
+        max-width: 100%;
+        aspect-ratio: 1110 / 562;
+        overflow: hidden;
+        margin: 0 auto;
+      }
+
+      .project-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .project-item-background {
+      @media (min-width: 1300px) and (max-width: 1455px) {
+        height: 60%;
+        top: 20%;
+        position: absolute;
+        width: 60%;
+        background: linear-gradient(to bottom,
+            var(--color-red) 0%,
+            var(--color-red) 70%,
+            var(--color-sand) 70%,
+            var(--color-sand) 100%);
+        z-index: -1;
+        left: 0;
+      }
+
+      @media (min-width: 1455px) {
+        height: 100%;
+        top: 0;
+        width: 50%;
+        position: absolute;
+        width: 60%;
+        background: linear-gradient(to bottom,
+            var(--color-red) 0%,
+            var(--color-red) 70%,
+            var(--color-sand) 70%,
+            var(--color-sand) 100%);
+        z-index: -1;
+        left: 0;
+      }
+    }
+
+    .card-project.reverse .project-item-background {
+      left: auto;
+      right: 0;
+    }
+  }
+}

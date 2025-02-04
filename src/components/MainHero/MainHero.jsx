@@ -144,6 +144,9 @@ export const MainHero = () => {
     const chars = [...text];
     const newText = [];
     let counter = 0;
+    const isMobile = window.innerWidth <= 765;
+
+    const mobileBreakpoints = [1, 14, 23, 35];
 
     chars.forEach((char, index) => {
       newText.push(
@@ -157,11 +160,17 @@ export const MainHero = () => {
         </span>
       );
 
-      if (counter === 1 && index !== chars.length - 1) {
-        newText.push(<span key={`comma-${index}`}>, </span>);
-        newText.push(<br key={`br-${index}`} />);
-      } else if (counter === 23 && index !== chars.length - 1) {
-        newText.push(<br key={`br-${index}`} />);
+      if (isMobile) {
+        if (mobileBreakpoints.includes(counter) && index !== chars.length - 1) {
+          newText.push(<br key={`br-${index}`} />);
+        }
+      } else {
+        if (counter === 1 && index !== chars.length - 1) {
+          newText.push(<span key={`comma-${index}`}>, </span>);
+          newText.push(<br key={`br-${index}`} />);
+        } else if (counter === 23 && index !== chars.length - 1) {
+          newText.push(<br key={`br-${index}`} />);
+        }
       }
 
       counter++;
@@ -191,12 +200,12 @@ export const MainHero = () => {
                   }`}
                 ></div>
                 <div
-                  className='container d-flex flex-column'
+                  className='container d-flex flex-column no-maxwidth'
                   style={{ transition: "all 0.3s ease-in-out" }}
                 >
                   <div className='loaders-wrapper d-flex flex-column justify-content-between'>
                     <div className='loader-text'>
-                      <h1 ref={heroTitleRef} className='text-start mb-5'>
+                      <h1 ref={heroTitleRef} className='text-start mb-5 pt-5'>
                         {breakTitleText(usingObjectAssign)}
                       </h1>
                     </div>

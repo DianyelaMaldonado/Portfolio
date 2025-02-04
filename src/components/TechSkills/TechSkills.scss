@@ -1,4 +1,8 @@
 .tech-skills {
+  max-width: 1380px;
+  margin: 0 auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
   & > div {
     @media screen and (min-width: 1024px) {
     width: 65%;

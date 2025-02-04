@@ -7,7 +7,7 @@ export const TechSkills = () => {
     <>
       <section className='tech-skills overflow-hidden pt-5 pb-5'>
         <div>
-          <div className='d-flex'>
+          <div className='d-flex mb-4'>
             <h2 className='me-2 is-ff-red'>Skills</h2>
             <h2>& Experience.</h2>
           </div>
